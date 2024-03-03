@@ -11,6 +11,7 @@ main {
   align-items: center;
   width: 100%;
   background-image: url(website.png);
+  position: relative;
 }
 .container {
   color: white;
@@ -27,16 +28,18 @@ main {
   justify-content: center;
 }
 .container input {
-  height: 30px;
+  font-family: "Roboto", sans-serif;  height: 30px;
   width: 100%;
   border-radius: 18px;
   border-style: solid;
   box-shadow: 0px 8px 2px black;
   margin-bottom: 8px;
+  padding: 10px;
 }
 .container a {
   text-decoration: underline;
   cursor: pointer;
+  transition-duration: 0.3s;
 }
 .container .E-F {
   padding-bottom: 12px;
@@ -57,10 +60,11 @@ main {
   border-radius: 18px;
   border-style: solid;
   box-shadow: 0px 8px 4px;
+  transition-duration: 0.5s;
+  cursor: pointer;
 }
 .buttons button:hover {
   background-color: rgb(85, 42, 187);
-  border-style: none;
 }
 .confirm-button {
   width: 58%;
@@ -68,3 +72,14 @@ main {
 .sign-up-button {
   width: 38%;
 }
+.footer {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.footer a{
+  font-size: 48px;
+  font-weight: bold;
+}
+
